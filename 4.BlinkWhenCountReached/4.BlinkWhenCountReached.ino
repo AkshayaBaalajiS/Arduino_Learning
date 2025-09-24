@@ -40,5 +40,4 @@ void loop() {
     digitalWrite(ledPin2, LOW);
     digitalWrite(ledPin3, LOW);
   }
-
 }
