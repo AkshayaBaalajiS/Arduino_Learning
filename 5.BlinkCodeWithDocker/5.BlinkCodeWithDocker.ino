@@ -1,4 +1,4 @@
-int blinkLed = 5;
+int blinkLed = 2;
 
 void setup()
 {
