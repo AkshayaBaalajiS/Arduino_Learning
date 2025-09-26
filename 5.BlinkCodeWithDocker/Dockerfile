@@ -18,6 +18,8 @@ RUN apt update && apt install -y \
 
 # RUN arduino-cli core update-index
 
+#additional dependency 
+RUN apt-get update && apt-get install -y python3 python3-pip && pip3 install pyserial
 
 
 # Install Arduino CLI
@@ -43,9 +45,7 @@ RUN arduino-cli core install esp32:esp32@3.0.2
 ENV  ARDUINO_HTTP_TIMEOUT=12000000000000
 
 
-RUN arduino-cli core install esp32:esp32
-
-WORKDIR /home/akshay
+WORKDIR /home/5.BlinkCodeWithDocker
 
 COPY . . 
 
