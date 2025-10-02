@@ -1,6 +1,7 @@
 int ledPin = 2;
 /*
 This is the code to control the brightness of the LED 
+
 */
 int ledChannel = 0;
 int frequncy = 5000; // frequency is how fast the turn on and off should happen
