@@ -29,7 +29,6 @@ void loop()
 			ledcWrite(ledChannel, dutyCycle);
 			delay(10);
 		}
-		// delay(1000);
 	}
 	else
 	{
