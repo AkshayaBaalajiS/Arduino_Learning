@@ -11,7 +11,7 @@ void setup()
 	pinMode(button, INPUT_PULLUP);
 	ledcSetup(ledChannel, frequency, resolution);
 	ledcAttachPin(ledPin, ledChannel);
-	// pinMode(ledPin, OUTPUT);
+	// pinMode(ledPin, OUTPUT); // this is not needed 
 }
 
 void loop()
