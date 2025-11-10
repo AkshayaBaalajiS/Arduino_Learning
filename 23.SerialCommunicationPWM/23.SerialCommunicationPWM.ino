@@ -10,6 +10,7 @@ void setup()
 {
 	ledcSetup(channel, frequency, resolution);
 	ledcAttachPin(ledPin, channel );
+	Serial.begin(115200);
 }
 
 void loop()
@@ -17,6 +18,7 @@ void loop()
 	if(digitalRead(ledPin)==LOW)
 	{
 		delay(100);
+		Serial.println("Hi OUTPUT");
 	}
 
 }
