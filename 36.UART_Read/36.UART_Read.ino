@@ -9,7 +9,7 @@ void loop()
 	//Serial.read();
 	if(Serial.available())
 	{
-		String data = Serial.readString();
+		String data = Serial.readStringUntil('\n');  // read until ENTER key
 		Serial.print("Data read is : ");
 		Serial.println(data);
 	}
