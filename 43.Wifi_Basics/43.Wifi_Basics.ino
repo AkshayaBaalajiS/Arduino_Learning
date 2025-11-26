@@ -7,7 +7,7 @@ void setup() {
   Serial.begin(115200);
 
   Serial.println("\nStarting WiFi...");
-  WiFi.mode(WIFI_STA);   // Set ESP32 as Station (client)
+  WiFi.mode(WIFI_AP);   // Set ESP32 as Station (client)
   WiFi.begin(ssid, password);
 
   Serial.print("Connecting");
