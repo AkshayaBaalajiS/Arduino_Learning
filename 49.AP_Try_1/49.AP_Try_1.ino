@@ -38,4 +38,5 @@ void loop()
 		}
 		Serial.println();
 	}
+	sleep(4);
 }
